@@ -4,14 +4,18 @@ import {shallow} from "enzyme";
 
 it("Spy and test the props.customAler", () => {
 
-    const customAlerSpy = jest.fn();
+    // const customAlerSpy = jest.fn();
+    // const props = {
+    //     customAlert: customAlerSpy
+    // }
+
     const props = {
-        customAlert: customAlerSpy
+        customAlert: jest.fn()
     }
 
     const wrapper = shallow(<ArashPanel {...props}/>);
-    wrapper.find(".salam").simulate("click");
-    expect(customAlerSpy).toBeCalled();
+    wrapper.find("Button").simulate("click");
+    expect(props.customAlert).toBeCalled();
 
 
 });
