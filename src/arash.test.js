@@ -1,4 +1,5 @@
 import {salam, bodyFunction} from "./arash";
+const carModule = require("./utils/commonjsUtil");
 console.log("Arash inam yeh testeh 22");
 
 it("This is for the the test", () => {
@@ -27,4 +28,9 @@ it("Body is going to be tested", () => {
     expect(salamMock.mock.results[0].value).toBe("Salam");
 });
 
-
+it ("The car Module", () => {
+    expect(carModule.getName()).toBe("Car");
+    carModule.setName("Toyota")
+    expect(carModule.getName()).toBe("Toyota");
+    expect(carModule.name).toBe("Toyota");
+}); 

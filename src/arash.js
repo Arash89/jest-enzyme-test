@@ -1,5 +1,5 @@
 // point 2
-import { areYouWell } from "./arashUtil";
+import { areYouWell } from "./utils/arashUtil";
 export const salam = () => "Salam";
 
 // point 1
