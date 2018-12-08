@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { ArashGet, ArashGet2, ArashGet3 } from './utils/arashUtil'
+import { ArashGet, ArashGet2, ArashGet3 } from './utils/arashUtil';
+import { generatorBasics } from './utils/arashGenerators'
 
 import ArashPanel from './components/arashPanel';
 class App extends Component {
@@ -37,6 +38,11 @@ class App extends Component {
 
   componentDidMount() {
     ArashGet3([1, 2, 3], this.setRecords);
+    const iterantor = generatorBasics();
+    console.log('Frist return:', iterantor.next().value);
+    console.log('Second return:', iterantor.next().value);
+    console.log('Third return:', iterantor.next().value);
+    console.log('Fourth return:', iterantor.next().value);
   }
 
   render() {

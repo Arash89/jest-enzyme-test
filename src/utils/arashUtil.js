@@ -10,9 +10,7 @@ export const ArashGet = (pages, setRecords) => {
       fetch(`https://reqres.in/api/users?page=${page}`)
         .then(response => response.json())
         .then(data => {
-          // console.log(data.data);
           wholePages = [...wholePages, ...data.data];
-          console.log("W2:", wholePages);
           
           if (i === arr.length) {
             setRecords(wholePages)
@@ -26,12 +24,11 @@ export const ArashGet = (pages, setRecords) => {
     let wholePages = [];
     let response = await fetch(`https://reqres.in/api/users?page=${page}`);
     let data = await response.json();
-    console.log("A3:", data);
     return data;
   }
 
 
- export function ArashGet3 (pages, setRecords)  {
+  export function ArashGet3 (pages, setRecords)  {
     let wholePages = [];
     let response = "";
     let data = "";
@@ -41,13 +38,11 @@ export const ArashGet = (pages, setRecords) => {
       i++;
       response = await fetch(`https://reqres.in/api/users?page=${page}`);
       data = await response.json();
-          // console.log(data.data);
-          wholePages = [...wholePages, ...data.data];
-          console.log("index:",  index);
-          
-          if (i === arr.length) {
-            setRecords(wholePages)
-          };
-          return wholePages;
-        });
-      }
+        wholePages = [...wholePages, ...data.data];
+        
+        if (i === arr.length) {
+          setRecords(wholePages)
+        };
+        return wholePages;
+    });
+}
