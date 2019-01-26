@@ -4,7 +4,12 @@ import { Button } from 'react-bootstrap';
 
 export default class ArashPanel extends React.Component {
     constructor(props) {
-        super(props)
+        super()
+
+        this.state = {
+            made: "Audi",
+            model: "Q7"
+        }
     }
 
     render() {
@@ -14,6 +19,7 @@ export default class ArashPanel extends React.Component {
                     <Panel.Title componentClass="h3">this.props.title</Panel.Title>
                 </Panel.Heading>
                 <Panel.Body>
+                    <h2>Car: {this.state.made}{this.state.model} </h2>
                     this.props.body&nbsp;
                     <Button onClick={this.props.customAlert}>props</Button>&nbsp;
                     <button className="salam" onClick={this.props.customAlert}>run</button>

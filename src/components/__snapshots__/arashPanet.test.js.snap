@@ -34,6 +34,12 @@ ShallowWrapper {
           bsClass="panel"
           collapsible={false}
         >
+          <h2>
+            Car: 
+            Audi
+            Q7
+             
+          </h2>
           this.props.body 
           <Button
             active={false}
@@ -92,6 +98,12 @@ ShallowWrapper {
         "props": Object {
           "bsClass": "panel",
           "children": Array [
+            <h2>
+              Car: 
+              Audi
+              Q7
+               
+            </h2>,
             "this.props.body ",
             <Button
               active={false}
@@ -113,6 +125,27 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Car: ",
+                "Audi",
+                "Q7",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Car: ",
+              "Audi",
+              "Q7",
+              " ",
+            ],
+            "type": "h2",
+          },
           "this.props.body ",
           Object {
             "instance": null,
@@ -174,6 +207,12 @@ ShallowWrapper {
             bsClass="panel"
             collapsible={false}
           >
+            <h2>
+              Car: 
+              Audi
+              Q7
+               
+            </h2>
             this.props.body 
             <Button
               active={false}
@@ -232,6 +271,12 @@ ShallowWrapper {
           "props": Object {
             "bsClass": "panel",
             "children": Array [
+              <h2>
+                Car: 
+                Audi
+                Q7
+                 
+              </h2>,
               "this.props.body ",
               <Button
                 active={false}
@@ -253,6 +298,27 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Car: ",
+                  "Audi",
+                  "Q7",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Car: ",
+                "Audi",
+                "Q7",
+                " ",
+              ],
+              "type": "h2",
+            },
             "this.props.body ",
             Object {
               "instance": null,
