@@ -12,6 +12,10 @@ export default class ArashPanel extends React.Component {
         }
     }
 
+    memberMethod() {
+        return 100;
+    }
+
     render() {
         return (
             <Panel bsStyle="primary">
